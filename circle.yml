@@ -1,2 +1,11 @@
-general:
-  build_dir: src
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker info
+    - docker build -t adamt/nodedockertest:$CIRCLE_SHA1 .
+
+test:
+  override:
