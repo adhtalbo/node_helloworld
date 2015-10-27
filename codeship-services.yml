@@ -1,0 +1,4 @@
+project_name:
+  build:
+    image: adamt/nodedockertest:$CI_MESSAGE
+    dockerfile_path: Dockerfile
