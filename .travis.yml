@@ -4,4 +4,4 @@ services:
 language: node_js
 node_js: stable
 script:
-  - docker build .
+  - docker build -t adamt/nodedockertest:$TRAVIS_COMMIT .
